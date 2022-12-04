@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import SplitScreen from "./SplitScreen";
 
 const Left = () => (

@@ -8,6 +8,10 @@ function Home() {
           <Link to="/layout">Layout Component Pattern</Link>
           <span> deals with arranging other components in a page</span>
         </li>
+        <li>
+          <Link to="/list">List Pattern</Link>
+          <span> deals with formatting list</span>
+        </li>
       </ol>
     </>
   );
