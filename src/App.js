@@ -1,12 +1,14 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import Layout from "./Components/Layout/Layout";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<h6>test</h6>} />
-          <Route path="/users" element={<h6>user</h6>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/layout" element={<Layout />} />
         </Routes>
       </BrowserRouter>
     </div>
