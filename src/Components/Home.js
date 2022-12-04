@@ -12,6 +12,10 @@ function Home() {
           <Link to="/list">List Pattern</Link>
           <span> deals with formatting list</span>
         </li>
+        <li>
+          <Link to="/Modal">Modal Pattern</Link>
+          <span> Creating a simple modal</span>
+        </li>
       </ol>
     </>
   );

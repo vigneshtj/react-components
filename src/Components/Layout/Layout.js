@@ -10,15 +10,11 @@ const Right = () => (
 function Layout() {
   return (
     <>
-      <ol>
-        <li>
-          <center>Split Screen</center>
-          <SplitScreen leftWidth={1} rightWidth={3}>
-            <Left />
-            <Right />
-          </SplitScreen>
-        </li>
-      </ol>
+      Layout pattern - splitting screen into two
+      <SplitScreen leftWidth={1} rightWidth={3}>
+        <Left />
+        <Right />
+      </SplitScreen>
     </>
   );
 }

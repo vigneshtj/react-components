@@ -5,6 +5,7 @@ import LargePersonListItem from "./People/LargePersonListItem";
 import SmallProductListItem from "./Products/SmallProductListItem";
 import LargeProductListItem from "./Products/LargeProductListItem";
 import RegularList from "./RegularList";
+import NumberedList from "./NumberedList";
 
 const Wrapper = styled.div`
   display: flex;
@@ -15,6 +16,7 @@ const Wrapper = styled.div`
 const Box = styled.div`
   border: 1px solid black;
   flex: 1;
+  padding: 1rem;
 `;
 
 function List() {
@@ -67,7 +69,7 @@ function List() {
   ];
   return (
     <>
-      <p>List components</p>
+      <p>List components - Formatting same list with different styles</p>
       <Wrapper>
         <Box>
           <h5>Small Person List</h5>
@@ -87,7 +89,7 @@ function List() {
         </Box>
         <Box>
           <h5>Small Product List</h5>
-          <RegularList
+          <NumberedList
             items={products}
             resourceName="product"
             itemComponent={SmallProductListItem}
@@ -95,7 +97,7 @@ function List() {
         </Box>
         <Box>
           <h5>Large Product List</h5>
-          <RegularList
+          <NumberedList
             items={products}
             resourceName="product"
             itemComponent={LargeProductListItem}
