@@ -5,7 +5,7 @@ import Home from "./Components/Home";
 import Layout from "./Components/Layout/Layout";
 import List from "./Components/List/List";
 import Modal from "./Components/Modal/Modal";
-
+import ModalParent from "./Components/ControlledModal/ModalParent";
 function App() {
   return (
     <div className="App">
@@ -15,6 +15,7 @@ function App() {
           <Route path="/layout" element={<Layout />} />
           <Route path="/list" element={<List />} />
           <Route path="/modal" element={<Modal />} />
+          <Route path="/controlModal" element={<ModalParent />} />
           <Route path="/uform" element={<UncontrolledForm />} />
           <Route path="/cform" element={<ControlledForm />} />
         </Routes>

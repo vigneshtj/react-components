@@ -26,7 +26,7 @@ function ModalComponent({ children }) {
     <>
       <button onClick={() => setShouldShow(true)}>Open Modal </button>
       {shouldShow && (
-        <ModalBackground>
+        <ModalBackground onClick={() => setShouldShow(false)}>
           <ModalBody>
             <button onClick={() => setShouldShow(false)}>close </button>
             {children}

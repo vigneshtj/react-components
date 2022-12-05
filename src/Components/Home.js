@@ -13,8 +13,12 @@ function Home() {
           <span> deals with formatting list</span>
         </li>
         <li>
-          <Link to="/modal">Modal Pattern</Link>
-          <span> creating a simple modal</span>
+          <Link to="/modal">Uncontrolled Modal Pattern</Link>
+          <span> Uncontrolled modal - State is maintained by modal itself</span>
+        </li>
+        <li>
+          <Link to="/controlModal">Controlled Modal Pattern</Link>
+          <span> State is maintained by its parent</span>
         </li>
         <li>
           <Link to="/uform">Uncontrolled Form Pattern</Link>
