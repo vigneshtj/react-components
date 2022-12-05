@@ -16,6 +16,9 @@ function ModalParent() {
         }}
       >
         <h1>Hello!</h1>
+        <button onClick={() => setShouldShowModal(!shouldShowModal)}>
+          Hide Modal
+        </button>
       </ControlledModal>
     </>
   );
