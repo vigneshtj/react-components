@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import UncontrolledForm from "./Components/Forms/UncontrolledForm";
+import ControlledForm from "./Components/Forms/ControlledForm";
 import Home from "./Components/Home";
 import Layout from "./Components/Layout/Layout";
 import List from "./Components/List/List";
@@ -13,6 +15,8 @@ function App() {
           <Route path="/layout" element={<Layout />} />
           <Route path="/list" element={<List />} />
           <Route path="/modal" element={<Modal />} />
+          <Route path="/uform" element={<UncontrolledForm />} />
+          <Route path="/cform" element={<ControlledForm />} />
         </Routes>
       </BrowserRouter>
     </div>

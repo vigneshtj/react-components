@@ -13,8 +13,16 @@ function Home() {
           <span> deals with formatting list</span>
         </li>
         <li>
-          <Link to="/Modal">Modal Pattern</Link>
-          <span> Creating a simple modal</span>
+          <Link to="/modal">Modal Pattern</Link>
+          <span> creating a simple modal</span>
+        </li>
+        <li>
+          <Link to="/uform">Uncontrolled Form Pattern</Link>
+          <span> validation can be only after submit</span>
+        </li>
+        <li>
+          <Link to="/cform">Controlled Form Pattern</Link>
+          <span> validation can be only while filling the form</span>
         </li>
       </ol>
     </>
