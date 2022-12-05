@@ -1,7 +1,7 @@
-import ModalComponent from "./ModalComponent";
+import UnControlledModal from "./UncontrolledModal";
 import LargeProductListItem from "../List/Products/LargeProductListItem";
 
-function Modal() {
+function UnModalParent() {
   const product = {
     id: "1234",
     name: "Flat-Screen TV",
@@ -18,11 +18,11 @@ function Modal() {
         </span>
         {JSON.stringify(product)}
       </p>
-      <ModalComponent>
+      <UnControlledModal>
         <LargeProductListItem product={product} />
-      </ModalComponent>
+      </UnControlledModal>
     </>
   );
 }
 
-export default Modal;
+export default UnModalParent;

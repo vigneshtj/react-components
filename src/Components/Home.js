@@ -13,7 +13,7 @@ function Home() {
           <span> deals with formatting list</span>
         </li>
         <li>
-          <Link to="/modal">Uncontrolled Modal Pattern</Link>
+          <Link to="/unmodal">Uncontrolled Modal Pattern</Link>
           <span> Uncontrolled modal - State is maintained by modal itself</span>
         </li>
         <li>

@@ -19,7 +19,7 @@ const ModalBody = styled.div`
   width: 50%;
 `;
 
-function ModalComponent({ children }) {
+function UnControlledModal({ children }) {
   const [shouldShow, setShouldShow] = useState(false);
 
   return (
@@ -37,4 +37,4 @@ function ModalComponent({ children }) {
   );
 }
 
-export default ModalComponent;
+export default UnControlledModal;
