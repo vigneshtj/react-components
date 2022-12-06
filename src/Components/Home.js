@@ -28,6 +28,14 @@ function Home() {
           <Link to="/cform">Controlled Form Pattern</Link>
           <span> validation can be only while filling the form</span>
         </li>
+        <li>
+          <Link to="/uonboard">Un Controlled Onboarding Flow Pattern</Link>
+          <span> Uncontrolled Onboarding flow</span>
+        </li>
+        <li>
+          <Link to="/conboard">Controlled Onboarding Flow Pattern</Link>
+          <span> Controlled Onboarding flow</span>
+        </li>
       </ol>
     </>
   );

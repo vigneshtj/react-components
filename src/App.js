@@ -6,6 +6,9 @@ import Layout from "./Components/Layout/Layout";
 import List from "./Components/List/List";
 import UnModalParent from "./Components/UnControlledModal/UnModalParent";
 import ModalParent from "./Components/ControlledModal/ModalParent";
+import UnOnboardParent from "./Components/UnOnboard/UnOnboardParent";
+import ConboardParent from "./Components/Conboard/ConboardParent";
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +21,8 @@ function App() {
           <Route path="/controlModal" element={<ModalParent />} />
           <Route path="/uform" element={<UncontrolledForm />} />
           <Route path="/cform" element={<ControlledForm />} />
+          <Route path="/uonboard" element={<UnOnboardParent />} />
+          <Route path="/conboard" element={<ConboardParent />} />
         </Routes>
       </BrowserRouter>
     </div>
