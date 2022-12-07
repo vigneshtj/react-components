@@ -36,6 +36,14 @@ function Home() {
           <Link to="/conboard">Controlled Onboarding Flow Pattern</Link>
           <span> Controlled Onboarding flow</span>
         </li>
+        <li>
+          <Link to="/simpleHOC">Simple HOC Pattern</Link>
+          <span>
+            {" "}
+            A HOC is a component that returns a component whereas regular
+            components returns JSX
+          </span>
+        </li>
       </ol>
     </>
   );

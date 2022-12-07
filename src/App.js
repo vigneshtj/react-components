@@ -8,6 +8,7 @@ import UnModalParent from "./Components/UnControlledModal/UnModalParent";
 import ModalParent from "./Components/ControlledModal/ModalParent";
 import UnOnboardParent from "./Components/UnOnboard/UnOnboardParent";
 import ConboardParent from "./Components/Conboard/ConboardParent";
+import SimpleHOCParent from "./Components/HigherOrderComponents/Simple/SimpleHOCParent";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/cform" element={<ControlledForm />} />
           <Route path="/uonboard" element={<UnOnboardParent />} />
           <Route path="/conboard" element={<ConboardParent />} />
+          <Route path="/simpleHOC" element={<SimpleHOCParent />} />
         </Routes>
       </BrowserRouter>
     </div>
