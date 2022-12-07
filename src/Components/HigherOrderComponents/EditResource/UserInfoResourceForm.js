@@ -1,4 +1,4 @@
-function UserInfoForm({
+function UserInfoResourceForm({
   user = { name: null, age: null, hairColor: null },
   onSaveUser,
   onResetUser,
@@ -29,4 +29,4 @@ function UserInfoForm({
   );
 }
 
-export default UserInfoForm;
+export default UserInfoResourceForm;

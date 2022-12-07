@@ -33,10 +33,11 @@ const editableUser = (Component, id) => {
 
     return formUser ? (
       <Component
+        {...props}
         user={{ ...formUser }}
-        onChange={onChangeUser}
-        onSave={onSaveUser}
-        onReset={onResetUser}
+        onChangeUser={onChangeUser}
+        onSaveUser={onSaveUser}
+        onResetUser={onResetUser}
       />
     ) : (
       <p>loading...</p>

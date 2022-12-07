@@ -52,6 +52,10 @@ function Home() {
           <Link to="/editHOC">HOC to edit data Pattern</Link>
           <span> A working example to edit data</span>
         </li>
+        <li>
+          <Link to="/editResourceHOC">HOC with generic API call Pattern</Link>
+          <span> Generic API fetching HOC</span>
+        </li>
       </ol>
     </>
   );

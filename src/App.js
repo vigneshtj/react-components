@@ -11,6 +11,7 @@ import ConboardParent from "./Components/Conboard/ConboardParent";
 import SimpleHOCParent from "./Components/HigherOrderComponents/Simple/SimpleHOCParent";
 import ReadUserHOCParent from "./Components/HigherOrderComponents/ReadUser/ReadUserHOCParent";
 import EditUserHOCParent from "./Components/HigherOrderComponents/EditUser/EditUserHOCParent";
+import EditResourceHOCParent from "./Components/HigherOrderComponents/EditResource/EditResourceHOCParent";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/simpleHOC" element={<SimpleHOCParent />} />
           <Route path="/readHOC" element={<ReadUserHOCParent />} />
           <Route path="/editHOC" element={<EditUserHOCParent />} />
+          <Route path="/editResourceHOC" element={<EditResourceHOCParent />} />
         </Routes>
       </BrowserRouter>
     </div>
