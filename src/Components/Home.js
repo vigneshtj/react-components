@@ -44,6 +44,14 @@ function Home() {
             components returns JSX
           </span>
         </li>
+        <li>
+          <Link to="/readHOC">HOC to read data Pattern</Link>
+          <span> A working example to read data</span>
+        </li>
+        <li>
+          <Link to="/editHOC">HOC to edit data Pattern</Link>
+          <span> A working example to edit data</span>
+        </li>
       </ol>
     </>
   );

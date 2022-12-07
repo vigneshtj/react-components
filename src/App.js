@@ -9,6 +9,8 @@ import ModalParent from "./Components/ControlledModal/ModalParent";
 import UnOnboardParent from "./Components/UnOnboard/UnOnboardParent";
 import ConboardParent from "./Components/Conboard/ConboardParent";
 import SimpleHOCParent from "./Components/HigherOrderComponents/Simple/SimpleHOCParent";
+import ReadUserHOCParent from "./Components/HigherOrderComponents/ReadUser/ReadUserHOCParent";
+import EditUserHOCParent from "./Components/HigherOrderComponents/EditUser/EditUserHOCParent";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/uonboard" element={<UnOnboardParent />} />
           <Route path="/conboard" element={<ConboardParent />} />
           <Route path="/simpleHOC" element={<SimpleHOCParent />} />
+          <Route path="/readHOC" element={<ReadUserHOCParent />} />
+          <Route path="/editHOC" element={<EditUserHOCParent />} />
         </Routes>
       </BrowserRouter>
     </div>
