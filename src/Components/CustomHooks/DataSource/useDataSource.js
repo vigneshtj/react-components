@@ -6,10 +6,9 @@ function useDataSource(dataSource) {
   useEffect(() => {
     (async () => {
       const result = await dataSource();
-      //Added this check to prevent infinite rendering - need to find root cause
-      if (JSON.stringify(data) !== JSON.stringify(result)) setData(result);
+      setData(result);
     })();
-  }, [dataSource, data]);
+  }, []);
 
   return data;
 }
