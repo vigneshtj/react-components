@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const editableUser = (Component, id) => {
+const withEditableUser = (Component, id) => {
   return (props) => {
     const [originalUser, setOriginalUser] = useState();
     const [formUser, setFormUser] = useState();
@@ -45,4 +45,4 @@ const editableUser = (Component, id) => {
   };
 };
 
-export default editableUser;
+export default withEditableUser;

@@ -10,7 +10,7 @@ import axios from "axios";
 
 const capitaliseString = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
-const editableUser = (Component, resourcePath, resourceName) => {
+const withEditableResource = (Component, resourcePath, resourceName) => {
   return (props) => {
     const [resourceData, setResourceData] = useState();
     const [data, setData] = useState();
@@ -51,4 +51,4 @@ const editableUser = (Component, resourcePath, resourceName) => {
   };
 };
 
-export default editableUser;
+export default withEditableResource;

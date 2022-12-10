@@ -1,7 +1,7 @@
-import editableUser from "./editableUser";
+import withEditableUser from "./withEditableUser";
 import UserInfoForm from "./UserInfoForm";
 
-const UserInfoWrapped = editableUser(UserInfoForm, "123");
+const UserInfoWrapped = withEditableUser(UserInfoForm, "123");
 
 function ReadUserHOCParent() {
   return <UserInfoWrapped />;

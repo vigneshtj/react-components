@@ -1,7 +1,7 @@
-import editableResource from "./editableResource";
+import withEditableResource from "./withEditableResource";
 import UserInfoResourceForm from "./UserInfoResourceForm";
 
-const UserInfoWrapped = editableResource(
+const UserInfoWrapped = withEditableResource(
   UserInfoResourceForm,
   "/users/123",
   "user"
