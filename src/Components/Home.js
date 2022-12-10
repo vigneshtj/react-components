@@ -66,6 +66,15 @@ function Home() {
             {" "}
             An Example for reusing code for API calls with custom hook
           </span>
+          <li>
+            <Link to="/dsCH">
+              custom hook for different datasources Pattern
+            </Link>
+            <span>
+              {" "}
+              A custom hook example for different Data source operations
+            </span>
+          </li>
         </li>
       </ol>
     </>

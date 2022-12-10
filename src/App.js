@@ -14,7 +14,7 @@ import EditUserHOCParent from "./Components/HigherOrderComponents/EditUser/EditU
 import EditResourceHOCParent from "./Components/HigherOrderComponents/EditResource/EditResourceHOCParent";
 import SimpleCH from "./Components/CustomHooks/Simple/SimpleCH";
 import CustomHookforAPI from "./Components/CustomHooks/Resource/CustomHookforAPI";
-
+import CustomHookForDS from "./Components/CustomHooks/DataSource/CustomHookForDS";
 function App() {
   return (
     <div className="App">
@@ -35,6 +35,7 @@ function App() {
           <Route path="/editResourceHOC" element={<EditResourceHOCParent />} />
           <Route path="/simpleCH" element={<SimpleCH />} />
           <Route path="/apiCH" element={<CustomHookforAPI />} />
+          <Route path="/dsCH" element={<CustomHookForDS />} />
         </Routes>
       </BrowserRouter>
     </div>
