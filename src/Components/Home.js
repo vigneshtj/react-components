@@ -56,6 +56,10 @@ function Home() {
           <Link to="/editResourceHOC">HOC with generic API call Pattern</Link>
           <span> Generic API fetching HOC</span>
         </li>
+        <li>
+          <Link to="/SimpleCH">Simple custom hook Pattern</Link>
+          <span> A Simple Example for custom hook</span>
+        </li>
       </ol>
     </>
   );

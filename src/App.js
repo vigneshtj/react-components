@@ -12,6 +12,7 @@ import SimpleHOCParent from "./Components/HigherOrderComponents/Simple/SimpleHOC
 import ReadUserHOCParent from "./Components/HigherOrderComponents/ReadUser/ReadUserHOCParent";
 import EditUserHOCParent from "./Components/HigherOrderComponents/EditUser/EditUserHOCParent";
 import EditResourceHOCParent from "./Components/HigherOrderComponents/EditResource/EditResourceHOCParent";
+import SimpleCH from "./Components/CustomHooks/Simple/SimpleCH";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/readHOC" element={<ReadUserHOCParent />} />
           <Route path="/editHOC" element={<EditUserHOCParent />} />
           <Route path="/editResourceHOC" element={<EditResourceHOCParent />} />
+          <Route path="/simpleCH" element={<SimpleCH />} />
         </Routes>
       </BrowserRouter>
     </div>
