@@ -13,6 +13,7 @@ import ReadUserHOCParent from "./Components/HigherOrderComponents/ReadUser/ReadU
 import EditUserHOCParent from "./Components/HigherOrderComponents/EditUser/EditUserHOCParent";
 import EditResourceHOCParent from "./Components/HigherOrderComponents/EditResource/EditResourceHOCParent";
 import SimpleCH from "./Components/CustomHooks/Simple/SimpleCH";
+import CustomHookforAPI from "./Components/CustomHooks/Resource/CustomHookforAPI";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/editHOC" element={<EditUserHOCParent />} />
           <Route path="/editResourceHOC" element={<EditResourceHOCParent />} />
           <Route path="/simpleCH" element={<SimpleCH />} />
+          <Route path="/apiCH" element={<CustomHookforAPI />} />
         </Routes>
       </BrowserRouter>
     </div>

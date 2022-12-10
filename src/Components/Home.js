@@ -60,6 +60,13 @@ function Home() {
           <Link to="/SimpleCH">Simple custom hook Pattern</Link>
           <span> A Simple Example for custom hook</span>
         </li>
+        <li>
+          <Link to="/apiCH">Custom Hook for API Pattern</Link>
+          <span>
+            {" "}
+            An Example for reusing code for API calls with custom hook
+          </span>
+        </li>
       </ol>
     </>
   );
