@@ -15,6 +15,10 @@ import EditResourceHOCParent from "./Components/HigherOrderComponents/EditResour
 import SimpleCH from "./Components/CustomHooks/Simple/SimpleCH";
 import CustomHookforAPI from "./Components/CustomHooks/Resource/CustomHookforAPI";
 import CustomHookForDS from "./Components/CustomHooks/DataSource/CustomHookForDS";
+import Recursive from "./Components/FunctionalProgramming/Recursive";
+import Composition from "./Components/FunctionalProgramming/Composition";
+import PartialApply from "./Components/FunctionalProgramming/PartialApply";
+
 function App() {
   return (
     <div className="App">
@@ -36,6 +40,9 @@ function App() {
           <Route path="/simpleCH" element={<SimpleCH />} />
           <Route path="/apiCH" element={<CustomHookforAPI />} />
           <Route path="/dsCH" element={<CustomHookForDS />} />
+          <Route path="/recursive" element={<Recursive />} />
+          <Route path="/composition" element={<Composition />} />
+          <Route path="/partial" element={<PartialApply />} />
         </Routes>
       </BrowserRouter>
     </div>

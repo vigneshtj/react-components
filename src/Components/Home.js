@@ -66,15 +66,31 @@ function Home() {
             {" "}
             An Example for reusing code for API calls with custom hook
           </span>
-          <li>
-            <Link to="/dsCH">
-              custom hook for different datasources Pattern
-            </Link>
-            <span>
-              {" "}
-              A custom hook example for different Data source operations
-            </span>
-          </li>
+        </li>
+        <li>
+          <Link to="/dsCH">custom hook for different datasources Pattern</Link>
+          <span>
+            {" "}
+            A custom hook example for different Data source operations
+          </span>
+        </li>
+        <li>
+          <Link to="/recursive">
+            Functional Programming - Recursive Pattern
+          </Link>
+          <span> Recursive function example</span>
+        </li>
+        <li>
+          <Link to="/composition">
+            Functional Programming - Composition Pattern
+          </Link>
+          <span> Composition example</span>
+        </li>
+        <li>
+          <Link to="/partial">
+            Functional Programming - Partially Apply Pattern
+          </Link>
+          <span> Partially Apply with HOC example</span>
         </li>
       </ol>
     </>
