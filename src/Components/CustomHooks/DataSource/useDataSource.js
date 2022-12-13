@@ -8,8 +8,7 @@ function useDataSource(dataSource) {
       const result = await dataSource();
       setData(result);
     })();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [dataSource]);
 
   return data;
 }

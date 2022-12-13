@@ -2,15 +2,12 @@ import { useCallback } from "react";
 import useDataSource from "./useDataSource";
 
 function ProductInfo({ productId }) {
-  const localStorageCall = useCallback(
-    (productId) => async () => {
-      const data = localStorage.getItem(`${productId}`);
-      return JSON.parse(data);
-    },
-    [productId]
-  );
+  const localStorageCall = useCallback(async () => {
+    const data = localStorage.getItem(`${productId}`);
+    return JSON.parse(data);
+  }, [productId]);
 
-  const product = useDataSource(localStorageCall(productId));
+  const product = useDataSource(localStorageCall);
 
   const { name, price, description, rating } = product || {};
 

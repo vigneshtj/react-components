@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import UserInfo from "./UserInfo";
 import ProductInfo from "./ProductInfo";
 
@@ -17,11 +17,21 @@ function CustomHookForDS() {
     );
   }, []);
 
+  const [userId, setUserId] = useState("123");
+  const userInputRef = useRef();
+
   return (
     <>
-      <UserInfo userId="123" />
+      <h1>User Info Section</h1>
+      <input type="text" ref={userInputRef} />{" "}
+      <button onClick={() => setUserId(userInputRef.current.value)}>
+        Change User Info
+      </button>
+      <br />
+      <UserInfo userId={userId} />
       {"..................................................."}
-      <ProductInfo productId={`1234`} />
+      <h1>Product Info Section</h1>
+      <ProductInfo productId="1234" />
     </>
   );
 }

@@ -1,13 +1,14 @@
+import { useCallback } from "react";
 import axios from "axios";
 import useDataSource from "./useDataSource";
 
 function UserInfo({ userId }) {
-  const apiCall = (url) => async () => {
-    const response = await axios.get(url);
+  const apiCall = useCallback(async () => {
+    const response = await axios.get(`/users/${userId}`);
     return response.data;
-  };
+  }, [userId]);
 
-  const user = useDataSource(apiCall(`/users/${userId}`));
+  const user = useDataSource(apiCall);
 
   const { name, age, hairColor, hobbies } = user || {};
   return user ? (
